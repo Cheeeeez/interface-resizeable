@@ -1,13 +1,18 @@
 <?php
+
 namespace interface_resizeable;
-class Shape {
+
+class Shape
+{
     public $name;
 
-    public function __construct($name) {
+    public function __construct($name)
+    {
         $this->name = $name;
     }
 
-    public function show() {
+    public function show()
+    {
         return "I am a shape. my name is $this->name";
     }
 }

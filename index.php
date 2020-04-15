@@ -3,7 +3,7 @@ include_once "Circle.php";
 include_once "Rectangle.php";
 include_once "Square.php";
 
-$percent = rand(1,100);
+$percent = rand(1, 100);
 
 $shapes = [];
 $circle = new interface_resizeable\Circle("Circle", 10);

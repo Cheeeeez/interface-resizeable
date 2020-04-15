@@ -1,4 +1,6 @@
 <?php
-interface Resizeable {
+
+interface Resizeable
+{
     public function resize($percent);
 }

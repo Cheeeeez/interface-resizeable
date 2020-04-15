@@ -1,11 +1,16 @@
 <?php
+
 namespace interface_resizeable;
+
 include_once "Circle.php";
 include_once "Resizeable.php";
-class Cylinder extends Circle {
+
+class Cylinder extends Circle
+{
     public $height;
 
-    public function __construct($name, $radius, $height) {
+    public function __construct($name, $radius, $height)
+    {
         parent::__construct($name, $radius);
         $this->height = $height;
     }
@@ -15,7 +20,8 @@ class Cylinder extends Circle {
         return parent::calculateArea() * 2 + parent::calculatePerimeter() * $this->height;
     }
 
-    public function calculateVolume() {
+    public function calculateVolume()
+    {
         return parent::calculateArea() * $this->height;
     }
 }
